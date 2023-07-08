@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aaa;
+  font-size: 18px;
+}
+
+:root {
+  --main-color: steelblue;
+}
+
+.app {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 550px;
+}
+
+.app header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button svg {
+  margin: 0 auto;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  padding: 40px;
+  border-bottom: 2px solid #ddd;
+}
+
+form input {
+  width: 100%;
+  padding-left: 10px;
+  outline-color: var(--main-color);
+}
+
+form button {
+  grid-column-start: none;
+}
+
+.list {
+  padding: 20px 40px;
+}
+
+.list .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list .item svg {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.list .item .item-right {
+  display: flex;
+  gap: 10px;
+}
+
+.list label {
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.list label.bought {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+footer {
+  background-color: var(--main-color);
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
